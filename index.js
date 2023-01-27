@@ -1,6 +1,6 @@
-import { getInput } from "@actions/core";
-import { promises as fs } from 'fs';
-import { get } from "axios";
+const core = require("@actions/core");
+const fs = require('fs').promises;
+const axios = require("axios");
 
 const category = getInput('category') || 'inspire';
 const file_path = getInput('readme_path') || 'output.md';
