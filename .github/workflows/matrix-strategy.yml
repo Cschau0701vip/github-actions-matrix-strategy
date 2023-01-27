@@ -18,4 +18,10 @@ jobs:
       - name: Use Node Js ${{ matrix.version }}
         uses: actions/setup-node@v2
         with:
-          node_version: ${{ matrix.version }}
+          node-version: ${{ matrix.version }}
+          
+      - name: Install Packages
+        run: npm install
+        
+      - name: Running on ${{ matrix.platform }} with Node Js ${{ matrix.version }}
+        run: npm test
