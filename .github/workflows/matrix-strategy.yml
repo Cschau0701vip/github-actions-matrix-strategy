@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
           
-      - name: Initialize Package.json
-        run: npm init --yes
+#      - name: Initialize Package.json
+#        run: npm init --yes
         
       - name: Install Packages
         run: npm install
         
       - name: Running on ${{ matrix.platform }} with Node Js ${{ matrix.version }}
-        run: node index.js
+        run: npm test
