@@ -30,4 +30,4 @@ jobs:
         run: chmod +x ./test.sh 
         
       - name: Running on ${{ matrix.platform }} with Node Js ${{ matrix.version }}
-        run: ./test.sh ${{ matrix.platform }}
+        run: ./test.sh platform=${{ matrix.platform }}
