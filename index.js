@@ -2,13 +2,13 @@ const core = require("@actions/core");
 const fs = require('fs').promises;
 const axios = require("axios");
 
-const category = getInput('category') || 'inspire';
-const file_path = getInput('readme_path') || 'output.md';
+const category = core.getInput('category') || 'inspire';
+const file_path = core.getInput('readme_path') || 'output.md';
 
 (async () => {
   try {
     // Fetch the quote from API
-    const { data } = await get(
+    const { data } = await axios.get(
       `https://quotes.rest/qod?category=${category}`
     );
 
