@@ -9,7 +9,9 @@ jobs:
       matrix:
         platform: [ubuntu-latest, windows-latest, macOS-latest]
         version: [14, 16, 18]
-        
+        exclude:
+          - platform: windows-latest
+
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout
