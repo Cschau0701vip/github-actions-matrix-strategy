@@ -1,0 +1,24 @@
+{
+  "name": "github-actions-matrix-strategy",
+  "version": "1.0.0",
+  "description": "github-actions-matrix-strategy",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cschau0701vip/github-actions-matrix-strategy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cschau0701vip/github-actions-matrix-strategy/issues"
+  },
+  "homepage": "https://github.com/Cschau0701vip/github-actions-matrix-strategy#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "axios": "^1.2.4"
+  }
+}
