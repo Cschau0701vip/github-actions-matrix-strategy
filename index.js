@@ -1,9 +1,12 @@
-const core = require("@actions/core");
+#const core = require("@actions/core");
+const { argv } = require('node:process');
 const fs = require('fs').promises;
 const axios = require("axios");
 
-const category = core.getInput('category') || 'inspire';
-const file_path = core.getInput('file_path') || 'output.md';
+console.log(argv);
+
+const category = argv[0] || 'inspire'; #core.getInput('category') || 'inspire';
+const file_path = argv[1] || 'output.md'; #core.getInput('file_path') || 'output.md';
 
 (async () => {
   try {
