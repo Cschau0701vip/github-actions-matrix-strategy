@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const axios = require("axios");
 
 const category = core.getInput('category') || 'inspire';
-const file_path = core.getInput('readme_path') || 'output.md';
+const file_path = core.getInput('file_path') || 'output.md';
 
 (async () => {
   try {
