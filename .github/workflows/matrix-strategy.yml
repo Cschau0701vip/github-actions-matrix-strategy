@@ -27,4 +27,4 @@ jobs:
         run: npm install
         
       - name: Running on ${{ matrix.platform }} with Node Js ${{ matrix.version }}
-        run: npm test --category=life --file_path='./output.md'
+        run: ./test.sh
