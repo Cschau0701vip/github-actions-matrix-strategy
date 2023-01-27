@@ -1,4 +1,4 @@
-#const core = require("@actions/core");
+//const core = require("@actions/core");
 const { argv } = require('node:process');
 const fs = require('fs').promises;
 const axios = require("axios");
