@@ -9,11 +9,13 @@ jobs:
       matrix:
         platform: [ubuntu-latest, windows-latest, macOS-latest]
         version: [14, 16, 18]
+        
     runs-on: Runs on ${{ matrix.platform }} - ${{ matrix.version }}
-      steps:
-        - name: Chekout
-          uses: actions/checkout@v2
-        - name: Use Node Js ${{ matrix.version }}
-          uses: actions/setup-node@v2
-          with:
-            node_version: ${{ matrix.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Use Node Js ${{ matrix.version }}
+        uses: actions/setup-node@v2
+        with:
+          node_version: ${{ matrix.version }}
