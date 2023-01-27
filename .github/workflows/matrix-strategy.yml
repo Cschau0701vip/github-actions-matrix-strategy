@@ -10,7 +10,7 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macOS-latest]
         version: [14, 16, 18]
         
-    runs-on: Runs on ${{ matrix.platform }} - ${{ matrix.version }}
+    runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
