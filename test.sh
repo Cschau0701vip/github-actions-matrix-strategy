@@ -1,11 +1,7 @@
 echo 'Start of the script!'
 
 if [ "$#" -ne 1 ]; then
-    echo "Illegal number of parameters"
-fi
-
-if [ "$platform" -ne 1 ]; then
-    echo "Missing platform parameters"
+    echo "No arguments supplied"
 fi
 
 if [[ $platform == 'windows-latest' ]]; 
