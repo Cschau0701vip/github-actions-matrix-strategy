@@ -23,7 +23,13 @@ console.log(file_path);
     let quote = `💬 Quote of the Day: "${qotd}"\n`;
     console.log(quote);
     // Write file with new quote
-    await fs.writeFile(file_path, quote);
+    await fs.writeFile('output.txt', quote, (err) => {
+      if (err)
+        console.log(err);
+      else {
+        console.log("File written successfully\n");
+      }    
+    );
     console.log('done');
   } catch (error) {
     console.log(error.message);
