@@ -29,7 +29,7 @@ console.log(file_path);
       else {
         console.log("File written successfully\n");
       }    
-    );
+    });
     console.log('done');
   } catch (error) {
     console.log(error.message);
