@@ -13,11 +13,11 @@ console.log(file_path);
 (async () => {
   try {
     // Fetch the quote from API
-    echo `https://quotes.rest/qod?category=${category}`;
+    console.log(`https://quotes.rest/qod?category=${category}`);
     const { data } = await axios.get(
       `https://quotes.rest/qod?category=${category}`
     );
-    echo data;
+    console.log(data);
     let qotd = data.contents.quotes[0].quote;
     quote = quote.concat(`💬 Quote of the Day: "${qotd}"\n`);
 
