@@ -24,10 +24,10 @@ console.log(file_path);
     console.log(data);
     let qotd = data.contents.quotes[0].quote;
     console.log(qotd);
-    let quote = `💬 Quote of the Day: "${qotd}"\n"${sha}"`;
+    let quote = `💬 Quote of the Day: "${qotd}"\n${sha}`;
     console.log(quote);
     // Write file with new quote
-    fs.writeFile(file_path+platform+version, quote, (err) => {
+    fs.writeFile(file_path.slice(0, file_path.lastIndexOf('.')), platform+'-'+version, file_path.slice(file_path.lastIndexOf('.'))].join('')), quote, (err) => {
       if (err)
         console.log(err);
       else {
