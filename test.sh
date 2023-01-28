@@ -7,9 +7,9 @@ echo "$#"
 if [[ $platform == 'windows-latest' ]]; 
 then
   echo $platform
-  npm test -- $category=life $file_path='./output.md'
+  npm test -- $category=life $file_path='./output.txt'
 else
   echo $platform
-  npm test -- 'life' './output.md'
+  npm test -- 'life' './output.txt'
 fi
 echo 'End of the script!'
