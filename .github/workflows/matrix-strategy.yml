@@ -40,6 +40,7 @@ jobs:
           git config --global user.name "Cschau0701vip"
           git add -A
           git commit -m "Added Quote of the Day from GitHub Actions using matrix strategy!"
+          git pull --rebase
           git push
   
       
