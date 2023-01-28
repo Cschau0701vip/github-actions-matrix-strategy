@@ -33,3 +33,13 @@ jobs:
         
       - name: Running on ${{ matrix.platform }} with Node Js ${{ matrix.version }}
         run: ./test.sh -platform=${{ matrix.platform }}
+        
+      - name: Git Commit and Push
+        run: |
+          git config --global user.email "Cschau0701vip@gmail.com"
+          git config --global user.name "Cschau0701vip"
+          git add -A
+          git commit -m "Added Quote of the Day from GitHub Actions using matrix strategy!"
+          git push
+  
+      
