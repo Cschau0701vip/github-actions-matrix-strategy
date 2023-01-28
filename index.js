@@ -5,8 +5,8 @@ const axios = require("axios");
 
 console.log(argv);
 
-const category = argv[0] || 'inspire'; //core.getInput('category') || 'inspire';
-const file_path = argv[1] || 'output.md'; //core.getInput('file_path') || 'output.md';
+const category = argv[2] || 'inspire'; //core.getInput('category') || 'inspire';
+const file_path = argv[3] || 'output.md'; //core.getInput('file_path') || 'output.md';
 
 (async () => {
   try {
