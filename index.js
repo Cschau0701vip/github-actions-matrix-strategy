@@ -1,6 +1,6 @@
 //const core = require("@actions/core");
 const { argv } = require('node:process');
-const fs = require('fs').promises;
+const fs = require('fs');
 const axios = require("axios");
 
 console.log(argv);
@@ -23,7 +23,7 @@ console.log(file_path);
     let quote = `💬 Quote of the Day: "${qotd}"\n`;
     console.log(quote);
     // Write file with new quote
-    await fs.writeFile('output.txt', quote, (err) => {
+    fs.writeFile('output.txt', quote, (err) => {
       if (err)
         console.log(err);
       else {
