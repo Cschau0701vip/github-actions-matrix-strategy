@@ -7,6 +7,8 @@ console.log(argv);
 
 const category = argv[2] || 'inspire'; //core.getInput('category') || 'inspire';
 const file_path = argv[3] || 'output.md'; //core.getInput('file_path') || 'output.md';
+console.log(category);
+console.log(file_path);
 
 (async () => {
   try {
