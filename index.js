@@ -19,11 +19,12 @@ console.log(file_path);
     );
     console.log(data);
     let qotd = data.contents.quotes[0].quote;
+    console.log(qotd);
     quote = quote.concat(`💬 Quote of the Day: "${qotd}"\n`);
-
+    console.log(quote);
     // Write file with new quote
     await fs.writeFile(file_path, quote, { signal });
-
+    console.log('done');
   } catch (error) {
     console.log(error.message);
   }
