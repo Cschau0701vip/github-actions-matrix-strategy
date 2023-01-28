@@ -4,7 +4,7 @@
   "description": "github-actions-matrix-strategy",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js -category -file_path"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
