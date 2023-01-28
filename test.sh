@@ -4,12 +4,12 @@ if [ "$#" -ne 1 ]; then
     echo "No arguments supplied"
 fi
 echo "$#"
-if [[ $platform == 'windows-latest' ]]; 
+if [[ $1 == 'windows-latest' ]]; 
 then
-  echo $platform
-  npm test -- $category=life $file_path='./output.txt' $platform $version $sha
+  echo $1
+  npm test -- $category=life $file_path='./output.txt' $1 $2 $3
 else
-  echo $platform
-  npm test -- 'life' './output.txt' $platform $version $sha
+  echo $1
+  npm test -- 'life' './output.txt' $1 $2 $3
 fi
 echo 'End of the script!'
